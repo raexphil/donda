@@ -14,6 +14,8 @@
 		E4AE176D2A83765F00DD63A1 /* DONDA_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE176C2A83765F00DD63A1 /* DONDA_UITests.swift */; };
 		E4AE17772A83765F00DD63A1 /* DONDA_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE17762A83765F00DD63A1 /* DONDA_UIUITests.swift */; };
 		E4AE17792A83765F00DD63A1 /* DONDA_UIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE17782A83765F00DD63A1 /* DONDA_UIUITestsLaunchTests.swift */; };
+		E4FBC4632AB879830098B4BF /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBC4622AB879830098B4BF /* FeedView.swift */; };
+		E4FBC4662AB87B560098B4BF /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBC4652AB87B560098B4BF /* PostRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		E4AE17722A83765F00DD63A1 /* DONDA UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DONDA UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AE17762A83765F00DD63A1 /* DONDA_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DONDA_UIUITests.swift; sourceTree = "<group>"; };
 		E4AE17782A83765F00DD63A1 /* DONDA_UIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DONDA_UIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4FBC4622AB879830098B4BF /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		E4FBC4652AB87B560098B4BF /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,10 @@
 		E4AE175A2A83765B00DD63A1 /* DONDA UI */ = {
 			isa = PBXGroup;
 			children = (
+				E4FBC45A2AB878DC0098B4BF /* Extensions */,
+				E4FBC45D2AB878E30098B4BF /* Model */,
+				E4FBC45C2AB878E20098B4BF /* Service */,
+				E4FBC45B2AB878E00098B4BF /* Core */,
 				E4AE175B2A83765B00DD63A1 /* DONDA_UIApp.swift */,
 				E4AE175D2A83765B00DD63A1 /* ContentView.swift */,
 				E4AE175F2A83765E00DD63A1 /* Assets.xcassets */,
@@ -125,6 +133,76 @@
 				E4AE17782A83765F00DD63A1 /* DONDA_UIUITestsLaunchTests.swift */,
 			);
 			path = "DONDA UIUITests";
+			sourceTree = "<group>";
+		};
+		E4FBC45A2AB878DC0098B4BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4FBC45B2AB878E00098B4BF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBC45E2AB879140098B4BF /* Components */,
+				E4FBC45F2AB879200098B4BF /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E4FBC45C2AB878E20098B4BF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E4FBC45D2AB878E30098B4BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4FBC45E2AB879140098B4BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBC4642AB87AE50098B4BF /* Post */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E4FBC45F2AB879200098B4BF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBC4602AB879330098B4BF /* ViewController */,
+				E4FBC4612AB8793B0098B4BF /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		E4FBC4602AB879330098B4BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E4FBC4612AB8793B0098B4BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBC4622AB879830098B4BF /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4FBC4642AB87AE50098B4BF /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBC4652AB87B560098B4BF /* PostRowView.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4AE175E2A83765B00DD63A1 /* ContentView.swift in Sources */,
+				E4FBC4662AB87B560098B4BF /* PostRowView.swift in Sources */,
+				E4FBC4632AB879830098B4BF /* FeedView.swift in Sources */,
 				E4AE175C2A83765B00DD63A1 /* DONDA_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
