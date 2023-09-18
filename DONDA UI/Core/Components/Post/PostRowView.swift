@@ -13,8 +13,8 @@ struct PostRowView: View {
         VStack(alignment: .leading) {
             HStack(alignment: .top, spacing: 12) {
                 // profile pic
-                Circle()
-                    .foregroundColor(.blue)
+                Image("bean_image")
+                    .resizable()
                     .frame(width: 50, height: 50)
                     .padding(.leading)
                     
@@ -47,7 +47,7 @@ struct PostRowView: View {
                     
                     
                 }.padding(.trailing, 15.0)
-            }
+            }.padding(.top)
             // post image
             Image("death-of-international-imperialism")
                 .resizable()
@@ -93,6 +93,7 @@ struct PostRowView: View {
             .padding([.leading, .trailing, .bottom])
             .font(.title)
                 
+            Divider()
         }
     }
 }
