@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E417AF722AB2C5E500A134DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E417AF712AB2C5E500A134DC /* LoginViewController.swift */; };
 		E4AE175C2A83765B00DD63A1 /* DONDA_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE175B2A83765B00DD63A1 /* DONDA_UIApp.swift */; };
 		E4AE175E2A83765B00DD63A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AE175D2A83765B00DD63A1 /* ContentView.swift */; };
 		E4AE17602A83765E00DD63A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AE175F2A83765E00DD63A1 /* Assets.xcassets */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E417AF712AB2C5E500A134DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4AE17582A83765B00DD63A1 /* DONDA UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DONDA UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AE175B2A83765B00DD63A1 /* DONDA_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DONDA_UIApp.swift; sourceTree = "<group>"; };
 		E4AE175D2A83765B00DD63A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 			children = (
 				E4AE175B2A83765B00DD63A1 /* DONDA_UIApp.swift */,
 				E4AE175D2A83765B00DD63A1 /* ContentView.swift */,
-				E417AF712AB2C5E500A134DC /* LoginViewController.swift */,
 				E4AE175F2A83765E00DD63A1 /* Assets.xcassets */,
 				E4AE17612A83765E00DD63A1 /* Preview Content */,
 			);
@@ -260,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E417AF722AB2C5E500A134DC /* LoginViewController.swift in Sources */,
 				E4AE175E2A83765B00DD63A1 /* ContentView.swift in Sources */,
 				E4AE175C2A83765B00DD63A1 /* DONDA_UIApp.swift in Sources */,
 			);
