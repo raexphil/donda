@@ -13,7 +13,7 @@ struct FeedView: View {
         ScrollView {
             LazyVStack {
                 ForEach(1...20, id: \.self) {_ in
-                    Text("Hello")
+                    PostRowView()
                 }
             }
         }

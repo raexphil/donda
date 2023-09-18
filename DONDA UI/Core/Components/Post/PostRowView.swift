@@ -33,12 +33,19 @@ struct PostRowView: View {
                             .padding(.trailing)
                     }
                     
-                    HStack(alignment: .top){
-                        // map icon
-                        Image(systemName: "mappin.and.ellipse")
-                        // location
-                        Text("San Andreas Hospital, California")
+                    Button {
+                        // view location button
+                    } label: {
+                        HStack(alignment: .top){
+                            // map icon
+                            Image(systemName: "mappin.and.ellipse")
+                            // location
+                            Text("San Andreas Hospital, California")
+                        }
                     }
+
+                    
+                    
                 }.padding(.trailing, 15.0)
             }
             // post image
@@ -48,30 +55,45 @@ struct PostRowView: View {
                 .border(.black, width: 2)
             
             HStack(spacing: 15){
-                // like icon
-                Image(systemName: "heart")
-                    .padding(.leading)
-                // comment icon
-                Image(systemName: "message")
-                // share button
-                Image(systemName: "paperplane")
+                
+                Button {
+                    // like button
+                } label: {
+                    Image(systemName: "heart")
+                }
+                
+                Button {
+                    // comment button
+                } label: {
+                    Image(systemName: "bubble.left")
+                }
+                
+                Button {
+                    // share button
+                } label: {
+                    Image(systemName: "paperplane")
+                }
                 
                 Spacer()
                 
-                // toGo button
-                Image(systemName: "list.bullet")
-                // see location button
-                Image(systemName: "mappin.and.ellipse")
-                    .padding(.trailing)
+                Button {
+                    // see location button
+                } label: {
+                    Image(systemName: "mappin.and.ellipse")
+                }
                 
+                Button {
+                    // toGo button
+                } label: {
+                    Image(systemName: "list.clipboard")
+                }
+            
             }
             .padding(.top, 1.0)
+            .padding([.leading, .trailing, .bottom])
             .font(.title)
                 
         }
-            
-            
-        
     }
 }
 
