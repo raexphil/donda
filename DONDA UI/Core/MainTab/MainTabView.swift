@@ -20,7 +20,7 @@ struct MainTabView: View {
             }.tag(0)
             
             
-            FeedView().onTapGesture {
+            MapView().onTapGesture {
                 self.selectedIndex = 1
             }
             .tabItem {
@@ -28,7 +28,7 @@ struct MainTabView: View {
             }.tag(1)
             
             
-            FeedView().onTapGesture {
+            ExploreView().onTapGesture {
                 self.selectedIndex = 2
             }
             .tabItem {

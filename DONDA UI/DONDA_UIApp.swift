@@ -11,7 +11,7 @@ import SwiftUI
 struct DONDA_UIApp: App {
     var body: some Scene {
         WindowGroup {
-            FeedView()
+            MainTabView()
         }
     }
 }
